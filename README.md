@@ -87,7 +87,7 @@ Phone number `(786) 571-7457` is the single tracked call line, surfaced in:
 - `sitemap.xml` lists every URL
 - `robots.txt` explicitly allows GPTBot, Google-Extended, PerplexityBot, ClaudeBot, CCBot and disallows SemrushBot/AhrefsBot/MJ12bot/DotBot
 - Images use `width`, `height`, `loading="lazy"` (except above-the-fold hero which uses `loading="eager"` + `fetchpriority="high"`)
-- `<link rel="preconnect" href="https://placehold.co">` on pages that use placeholder images
+- Images are real licensed photos from Pexels, stored locally under `images/` and served directly
 
 ## Local Development
 
@@ -108,7 +108,7 @@ Drop the entire folder onto any static host. The `_headers` and `_redirects` fil
 ## Pre-Launch Checklist
 
 - [ ] Replace `REPLACE_WITH_REAL_ENDPOINT` in every form with actual Formspree ID
-- [ ] Swap placeholder `placehold.co` images for real photographs
+- [x] Swap placeholder images for real photographs (done — Pexels-licensed photos in `images/`)
 - [ ] Verify phone number is correct and routing to the right line
 - [ ] Confirm domain DNS points to the static host
 - [ ] Submit sitemap.xml to Google Search Console and Bing Webmaster Tools
