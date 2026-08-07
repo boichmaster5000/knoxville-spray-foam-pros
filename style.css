@@ -338,7 +338,8 @@ section.alt { background: #f7fafc; }
 }
 .final-cta h2 { color: #ffffff; }
 .final-cta a { color: #d69e2e; }
-.final-cta .cta-button { font-size: 1.125rem; padding: 16px 28px; }
+.final-cta .cta-button { font-size: 1.125rem; padding: 16px 28px; color: #1a365d; }
+.final-cta .cta-button:hover { background: #b7791f; color: #1a365d; }
 
 /* DISCLOSURE */
 .disclosure {
