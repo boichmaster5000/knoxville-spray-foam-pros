@@ -73,7 +73,7 @@ The contact form on every page POSTs to a Formspree endpoint. Before going live,
 grep -rn "REPLACE_WITH_REAL_ENDPOINT" .
 ```
 
-Phone number `(786) 571-7457` is the single tracked call line, surfaced in:
+Phone number `(865) 564-7823` is the single tracked call line, surfaced in:
 - Header CTA on every page
 - Hero CTAs
 - Final CTA section on every page
