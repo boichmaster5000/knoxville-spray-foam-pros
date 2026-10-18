@@ -7,5 +7,12 @@ https://www.knoxvillesprayfoampros.com/* https://knoxvillesprayfoampros.com/:spl
 # Cloudflare Pages serves .html pages at their extensionless path with a 308 redirect from /*.html;
 # we leave that implicit and rely on the host, so no `/*.html /:splat 308` rule here.
 
+# Internal-only docs folder is never served. The `!` force flag makes this rule win
+# over any file that happens to sit at /docs/... in the deploy output, so even if
+# Cloudflare Pages uploads /docs/TRACKING.md it is not reachable from the web.
+/docs/* /404.html 404!
+# Legacy path (TRACKING.md used to live at the root; this stops any stale link).
+/TRACKING.md /404.html 404!
+
 # Catch-all: unknown URLs render /404.html with a real 404 status (NOT a soft 200, NOT a redirect to home)
 /* /404.html 404
