@@ -132,19 +132,9 @@ nav a:hover { background: #f7fafc; color: #1a365d; }
   color: #1a365d;
 }
 
-/* ANSWER BLOCK (now its own section directly below the hero) */
-.answer-block { padding: 24px 0; background: #ffffff; }
-.hero-answer {
-  font-size: 1rem;
-  color: #2d3748;
-  margin: 0;
-  line-height: 1.65;
-  padding: 16px 20px;
-  background: #f7fafc;
-  border-left: 4px solid #d69e2e;
-  border-radius: 4px;
-}
-.hero-answer a { color: #1a365d; font-weight: 600; }
+/* QUICK ANSWERS section: plain H2 + paragraph, same look as other body sections */
+.quick-answers p { font-size: 1rem; line-height: 1.65; color: #2d3748; margin: 0; }
+.quick-answers a { color: #1a365d; font-weight: 600; }
 
 /* FORM CARD */
 .form-card {
@@ -507,7 +497,6 @@ ul.benefit-list li::before {
   .form-row { grid-template-columns: 1fr; }
   h1 { font-size: 1.625rem; }
   .hero h1 { font-size: 1.75rem; }
-  .hero-answer { font-size: 0.9375rem; padding: 14px 16px; }
   h2 { font-size: 1.375rem; }
   .header-inner { padding: 10px 16px; }
   .phone-cta strong { font-size: 1.0625rem; }
