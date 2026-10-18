@@ -8,6 +8,34 @@
 <meta name="robots" content="noindex,follow">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/style.css">
+<!-- GA4 tracking - replace G-XXXXXXXXXX and uncomment this entire block when the GA4 property exists.
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+  // Event stub: form submit (fires when the quote form submits)
+  document.addEventListener('submit', function(e){
+    if (e.target && e.target.action && e.target.action.indexOf('formspree') !== -1) {
+      gtag('event', 'generate_lead', {
+        form_id: e.target.getAttribute('name') || 'quote-form',
+        page_location: window.location.href
+      });
+    }
+  }, true);
+  // Event stub: tel: link click
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href^="tel:"]');
+    if (a) {
+      gtag('event', 'phone_call_click', {
+        phone_number: a.getAttribute('href').replace('tel:', ''),
+        page_location: window.location.href
+      });
+    }
+  }, true);
+</script>
+-->
 </head>
 <body>
 
@@ -19,10 +47,10 @@
       <a href="/">Home</a>
       <a href="/services/">Services</a>
       <a href="/service-areas/">Service Areas</a>
-      <a href="/pricing.html">Pricing</a>
+      <a href="/pricing">Pricing</a>
       <a href="/blog/">Blog</a>
-      <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
     </nav>
     <a href="tel:+18655647823" class="cta-button header-cta">Free Quote</a>
   </div>
@@ -58,17 +86,17 @@
       <div class="card">
         <h3>About Us</h3>
         <p>Who we are, what we install, our service philosophy.</p>
-        <a class="learn-more" href="/about.html">Learn More →</a>
+        <a class="learn-more" href="/about">Learn More →</a>
       </div>
       <div class="card">
         <h3>FAQ</h3>
         <p>Frequently asked questions about spray foam in Knoxville.</p>
-        <a class="learn-more" href="/faq.html">Read FAQ →</a>
+        <a class="learn-more" href="/faq">Read FAQ →</a>
       </div>
       <div class="card">
         <h3>Contact</h3>
         <p>Phone, form, hours, service area.</p>
-        <a class="learn-more" href="/contact.html">Contact Us →</a>
+        <a class="learn-more" href="/contact">Contact Us →</a>
       </div>
     </div>
   </div>
@@ -93,9 +121,9 @@
     <div class="footer-grid">
       <div><h4>Knoxville Spray Foam Pros</h4><p><a href="tel:+18655647823">(865) 564-7823</a></p><p>Mon-Sat 7AM-7PM</p></div>
       <div><h4>Serving</h4><p>Knoxville, TN<br>Farragut, TN<br>Powell, TN<br>Maryville, TN<br>Oak Ridge, TN<br>West Knoxville, TN<br>Bearden, TN<br>Alcoa, TN<br>Karns, TN</p></div>
-      <div><h4>Quick Links</h4><p><a href="/">Home</a><br><a href="/services/">Services</a><br><a href="/service-areas/">Service Areas</a><br><a href="/pricing.html">Pricing</a><br><a href="/about.html">About</a><br><a href="/contact.html">Contact</a><br><a href="/faq.html">FAQ</a><br><a href="/blog/">Blog</a></p></div>
+      <div><h4>Quick Links</h4><p><a href="/">Home</a><br><a href="/services/">Services</a><br><a href="/service-areas/">Service Areas</a><br><a href="/pricing">Pricing</a><br><a href="/about">About</a><br><a href="/contact">Contact</a><br><a href="/faq">FAQ</a><br><a href="/blog/">Blog</a><br><a href="/privacy">Privacy</a></p></div>
     </div>
-    <div class="footer-bottom-links"><a href="/">Home</a> | <a href="/services/">Services</a> | <a href="/service-areas/">Service Areas</a> | <a href="/pricing.html">Pricing</a> | <a href="/about.html">About</a> | <a href="/contact.html">Contact</a> | <a href="/faq.html">FAQ</a> | <a href="/blog/">Blog</a></div>
+    <div class="footer-bottom-links"><a href="/">Home</a> | <a href="/services/">Services</a> | <a href="/service-areas/">Service Areas</a> | <a href="/pricing">Pricing</a> | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/faq">FAQ</a> | <a href="/blog/">Blog</a> | <a href="/privacy">Privacy</a></div>
     <div class="footer-disclosure">
       <p>Knoxville Spray Foam Pros connects Knoxville homeowners with independent local spray foam professionals.</p>
       <p>© 2026 Knoxville Spray Foam Pros. All rights reserved.</p>

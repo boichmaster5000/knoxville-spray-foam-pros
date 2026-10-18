@@ -1,2 +1,11 @@
+# Force non-www (apex)
 https://www.knoxvillesprayfoampros.com/* https://knoxvillesprayfoampros.com/:splat 301!
+
+# Explicit /index.html -> / so the home has one canonical URL
+/index.html / 301!
+
+# Cloudflare Pages serves .html pages at their extensionless path with a 308 redirect from /*.html;
+# we leave that implicit and rely on the host, so no `/*.html /:splat 308` rule here.
+
+# Catch-all: unknown URLs render /404.html with a real 404 status (NOT a soft 200, NOT a redirect to home)
 /* /404.html 404
