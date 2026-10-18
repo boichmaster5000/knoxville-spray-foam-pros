@@ -32,13 +32,15 @@
 }
 </script>
 <!-- GA4 tracking - replace G-XXXXXXXXXX and uncomment this entire block when the GA4 property exists.
+     Mark `generate_lead_confirmed` as a Key Event (conversion) in GA4 Admin -> Key events.
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-XXXXXXXXXX');
-  // Event stub: form submit (fires when the quote form submits)
+
+  // Event: form submit (fires when the Formspree quote form submits)
   document.addEventListener('submit', function(e){
     if (e.target && e.target.action && e.target.action.indexOf('formspree') !== -1) {
       gtag('event', 'generate_lead', {
@@ -47,24 +49,38 @@
       });
     }
   }, true);
-  // Event stub: tel: link click
+
+  // Event: tel: link click (uses the single [data-call="main"] attribute)
   document.addEventListener('click', function(e){
     var a = e.target.closest && e.target.closest('a[href^="tel:"]');
     if (a) {
       gtag('event', 'phone_call_click', {
         phone_number: a.getAttribute('href').replace('tel:', ''),
-        page_location: window.location.href
+        page_location: window.location.href,
+        data_call: a.getAttribute('data-call') || ''
       });
     }
   }, true);
+
+  // Event: thank-you page view = conversion (Formspree _next lands here after submit)
+  (function(){
+    var path = window.location.pathname.replace(/\/$/, '');
+    if (path === '/thank-you' || path === '/thank-you.html') {
+      gtag('event', 'generate_lead_confirmed', {
+        page_location: window.location.href,
+        page_path: path
+      });
+    }
+  })();
 </script>
 -->
+
 </head>
 <body>
 
 <header>
   <div class="header-inner">
-    <a href="tel:+18655647823" class="phone-cta">
+    <a href="tel:+18655647823" class="phone-cta" data-call="main">
       <strong>(865) 564-7823</strong>
       <span>Call Now - Free Quote</span>
     </a>
@@ -78,7 +94,7 @@
       <a href="/about">About</a>
       <a href="/contact">Contact</a>
     </nav>
-    <a href="tel:+18655647823" class="cta-button header-cta">Free Quote</a>
+    <a href="tel:+18655647823" class="cta-button header-cta" data-call="main">Free Quote</a>
   </div>
 </header>
 
@@ -113,7 +129,7 @@
 
     <h2>Ready to Get Started?</h2>
     <p>If you are a Knoxville homeowner considering spray foam insulation, the first step is a free quote. We will visit your property, assess the space, and give you a written number quickly. No pressure, no upsell, no obligation.</p>
-    <p><a class="cta-button" href="tel:+18655647823">📞 Call (865) 564-7823</a></p>
+    <p><a class="cta-button" href="tel:+18655647823" data-call="main">📞 Call (865) 564-7823</a></p>
   </div>
 </section>
 
@@ -128,7 +144,7 @@
     <div class="footer-grid">
       <div>
         <h4>Knoxville Spray Foam Pros</h4>
-        <p><a href="tel:+18655647823">(865) 564-7823</a></p>
+        <p><a href="tel:+18655647823" data-call="main">(865) 564-7823</a></p>
         <p>Mon-Sat 7AM-7PM</p>
       </div>
       <div>
@@ -150,7 +166,7 @@
   </div>
 </footer>
 
-<a href="tel:+18655647823" class="mobile-call-bar">📞 Call (865) 564-7823 - Free Quote</a>
+<a href="tel:+18655647823" class="mobile-call-bar" data-call="main">📞 Call (865) 564-7823 - Free Quote</a>
 <script src="app.js" defer></script>
 </body>
 </html>
