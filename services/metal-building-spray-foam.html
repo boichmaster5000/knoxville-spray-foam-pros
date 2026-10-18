@@ -24,7 +24,7 @@
   "@type": "Service",
   "name": "Metal Building Spray Foam Insulation",
   "serviceType": "Steel Building Closed Cell Spray Polyurethane Foam Installation",
-  "areaServed": {"@type": "City", "name": "Knoxville", "containedInPlace": {"@type": "State", "name": "Tennessee"}},
+  "areaServed": [{"@type": "City", "name": "Knoxville", "containedInPlace": {"@type": "State", "name": "Tennessee"}}, {"@type": "AdministrativeArea", "name": "East Tennessee"}],
   "provider": {"@id": "https://knoxvillesprayfoampros.com/#business"},
   "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "2.50-6.00", "priceSpecification": {"@type": "UnitPriceSpecification", "priceCurrency": "USD", "price": "2.50-6.00", "unitText": "square foot"}}
 }
@@ -40,6 +40,46 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How thick should spray foam be on a Knoxville metal building?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Minimum 1 inch closed cell to stop condensation. 2-3 inches if you want meaningful thermal performance for a conditioned space."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will spray foam damage my steel building?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Closed cell foam protects steel from corrosion by eliminating moisture contact. The manufacturer warranty on most modern Knoxville-area steel buildings explicitly allows spray foam insulation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can spray foam be sprayed in winter in Knoxville?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, down to about 25°F substrate temperature for closed cell. We use winter-grade chemistry from November through March in Knoxville."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to fireproof spray foam in a Knoxville metal building?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In Tennessee, exposed spray foam in occupied buildings requires a thermal barrier (intumescent paint or drywall). Unoccupied storage buildings often qualify for the alternate \"ignition barrier\" rule. We will spec to your building's use."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -51,6 +91,7 @@
       <a href="/">Home</a>
       <a href="/services/">Services</a>
       <a href="/service-areas/">Service Areas</a>
+      <a href="/pricing.html">Pricing</a>
       <a href="/blog/">Blog</a>
       <a href="/about.html">About</a>
       <a href="/contact.html">Contact</a>
@@ -65,6 +106,7 @@
   <div class="container hero-grid">
     <div>
       <h1>Metal Building Spray Foam Insulation in Knoxville, Tennessee</h1>
+      <p class="hero-answer">Metal building spray foam insulation applies closed cell polyurethane foam directly to the inside of steel panels, eliminating condensation and stabilizing temperatures in Knoxville workshops, warehouses and garages. Typical installed cost in Knoxville runs $1.50 to $5.00 per square foot for residential closed cell work, and $2.50 to $6.00 per square foot for steel buildings depending on access. The process is a free on-site assessment, a written quote, surface prep and spraying in controlled lifts, then a 24-hour cure. See the <a href="/pricing.html">Knoxville pricing guide</a> for a full breakdown.</p>
       <p>A steel building in East Tennessee will rain on you from the inside. When warm humid Knoxville air hits a cold steel roof panel, condensation forms, droplets fall onto tools, equipment, and finished work below. Closed cell spray foam sprayed directly to the inside of the steel skin eliminates condensation at the source - no vapor barrier needed, no fiberglass to fall down, no rust streaks across your shop floor. We handle steel buildings, workshops, warehouses, garages, and barndominiums across Knox, Blount, Anderson, and Sevier County.</p>
       <img src="../images/metal-building.jpg" alt="Closed cell spray foam applied to interior steel panels of a Knoxville workshop" width="1200" height="800" loading="eager" fetchpriority="high">
       <p><a class="cta-button" href="tel:+18655647823">📞 Call (865) 564-7823</a> <a class="cta-button" href="#quote">Get Free Quote</a></p>
@@ -177,6 +219,13 @@
   </div>
 </section>
 
+<section class="alt">
+  <div class="container">
+    <h2>Knoxville Service Areas</h2>
+    <p>Available across the Knoxville metro and surrounding East Tennessee: <a href="/service-areas/">Knoxville</a>, <a href="/service-areas/farragut.html">Farragut</a>, <a href="/service-areas/powell.html">Powell</a>, <a href="/service-areas/maryville.html">Maryville</a>, <a href="/service-areas/oak-ridge.html">Oak Ridge</a>, <a href="/service-areas/bearden.html">Bearden</a>, <a href="/service-areas/west-knoxville.html">West Knoxville</a>, <a href="/service-areas/alcoa.html">Alcoa</a>, and <a href="/service-areas/karns.html">Karns</a>.</p>
+  </div>
+</section>
+
 <section class="final-cta">
   <div class="container">
     <h2>Get a Free Metal Building Quote in Knoxville</h2>
@@ -184,12 +233,6 @@
     <p><a class="cta-button" href="tel:+18655647823">📞 Call Now</a></p>
   </div>
 </section>
-
-<div class="disclosure">
-  <div class="container">
-    <p>This website provides information for Knoxville TN spray foam insulation services. Inquiries are routed to licensed local spray foam installers in the Knoxville area. We are an advertising service and connect homeowners with vetted contractors.</p>
-  </div>
-</div>
 
 <footer>
 <!-- CREDENTIALS MODULE
@@ -202,11 +245,11 @@
     <div class="footer-grid">
       <div><h4>Knoxville Spray Foam Pros</h4><p><a href="tel:+18655647823">(865) 564-7823</a></p><p>Mon-Sat 7AM-7PM</p></div>
       <div><h4>Serving</h4><p>Knoxville, TN<br>Farragut, TN<br>Powell, TN<br>Maryville, TN<br>Oak Ridge, TN<br>West Knoxville, TN<br>Bearden, TN<br>Alcoa, TN<br>Karns, TN</p></div>
-      <div><h4>Quick Links</h4><p><a href="/">Home</a><br><a href="/services/">Services</a><br><a href="/service-areas/">Service Areas</a><br><a href="/about.html">About</a><br><a href="/contact.html">Contact</a><br><a href="/faq.html">FAQ</a><br><a href="/blog/">Blog</a></p></div>
+      <div><h4>Quick Links</h4><p><a href="/">Home</a><br><a href="/services/">Services</a><br><a href="/service-areas/">Service Areas</a><br><a href="/pricing.html">Pricing</a><br><a href="/about.html">About</a><br><a href="/contact.html">Contact</a><br><a href="/faq.html">FAQ</a><br><a href="/blog/">Blog</a></p></div>
     </div>
-    <div class="footer-bottom-links"><a href="/">Home</a> | <a href="/services/">Services</a> | <a href="/service-areas/">Service Areas</a> | <a href="/about.html">About</a> | <a href="/contact.html">Contact</a> | <a href="/faq.html">FAQ</a> | <a href="/blog/">Blog</a></div>
+    <div class="footer-bottom-links"><a href="/">Home</a> | <a href="/services/">Services</a> | <a href="/service-areas/">Service Areas</a> | <a href="/pricing.html">Pricing</a> | <a href="/about.html">About</a> | <a href="/contact.html">Contact</a> | <a href="/faq.html">FAQ</a> | <a href="/blog/">Blog</a></div>
     <div class="footer-disclosure">
-      <p>The website shares information with local, licensed, and insured vendors who will reach out and contact you the consumer with the information provided here.</p>
+      <p>Knoxville Spray Foam Pros connects Knoxville homeowners with independent local spray foam professionals.</p>
       <p>© 2026 Knoxville Spray Foam Pros. All rights reserved.</p>
     </div>
   </div>

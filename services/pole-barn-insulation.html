@@ -24,7 +24,7 @@
   "@type": "Service",
   "name": "Pole Barn Spray Foam Insulation",
   "serviceType": "Pole Barn and Barndominium Spray Polyurethane Foam Installation",
-  "areaServed": {"@type": "City", "name": "Knoxville", "containedInPlace": {"@type": "State", "name": "Tennessee"}},
+  "areaServed": [{"@type": "City", "name": "Knoxville", "containedInPlace": {"@type": "State", "name": "Tennessee"}}, {"@type": "AdministrativeArea", "name": "East Tennessee"}],
   "provider": {"@id": "https://knoxvillesprayfoampros.com/#business"},
   "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "7500.00-14000.00", "priceSpecification": {"@type": "UnitPriceSpecification", "priceCurrency": "USD", "price": "7500.00-14000.00", "unitText": "project"}}
 }
@@ -40,6 +40,46 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I spray foam a Knoxville pole barn in winter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Closed cell foam can be sprayed down to about 25°F substrate temperature with winter-grade chemistry. We work November through March across the Knoxville area."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will spray foam damage the steel skin of my pole barn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Properly applied closed cell foam protects steel from corrosion. The major pole barn manufacturers (Morton, Wick, MQS) all permit closed cell foam under their warranties."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How thick does the foam need to be for a Knoxville barndominium?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For barndominium living space we recommend 3 inches closed cell on the roof and 2 inches on walls, which hits R-21 / R-14. Add open cell in interior framed walls for additional sound and R-value."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a thermal barrier over spray foam in a Knoxville barn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Conditioned living space yes - 1/2\" drywall is the standard. Ag and unconditioned storage barns generally qualify for the \"ignition barrier\" rule with an intumescent paint coating instead of drywall."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -51,6 +91,7 @@
       <a href="/">Home</a>
       <a href="/services/">Services</a>
       <a href="/service-areas/">Service Areas</a>
+      <a href="/pricing.html">Pricing</a>
       <a href="/blog/">Blog</a>
       <a href="/about.html">About</a>
       <a href="/contact.html">Contact</a>
@@ -65,6 +106,7 @@
   <div class="container hero-grid">
     <div>
       <h1>Pole Barn & Barndominium Spray Foam Insulation in Knoxville, Tennessee</h1>
+      <p class="hero-answer">Pole barn and barndominium spray foam insulation applies closed cell polyurethane foam to roof and wall panels in post-frame buildings across Knox, Blount and Sevier County. Typical installed cost in Knoxville runs $1.50 to $5.00 per square foot of closed cell, so a typical 30x40 pole barn runs $7,500 to $14,000. The process is a free on-site assessment, a written quote, panel prep and spraying, then a 24-hour cure. See the <a href="/pricing.html">Knoxville pricing guide</a> for a full breakdown.</p>
       <p>Pole barns and barndominiums are everywhere across rural Knox County and the surrounding ag belt - Karns, Powell, Halls, Corryton, Strawberry Plains, and out into Sevier and Blount County. The post-frame design is fast and inexpensive to put up, but the cavity-free wall section is impossible to insulate well with anything except spray foam. Closed cell spray foam applied to the inside of the steel skin and underside of the metal roof eliminates condensation, locks in heat in winter, keeps the building usable in summer, and is the only practical insulation method for a post-frame structure.</p>
       <img src="../images/pole-barn.jpg" alt="Spray foam applied to the interior of a Knoxville pole barn" width="1200" height="800" loading="eager" fetchpriority="high">
       <p><a class="cta-button" href="tel:+18655647823">📞 Call (865) 564-7823</a> <a class="cta-button" href="#quote">Get Free Quote</a></p>
@@ -177,6 +219,13 @@
   </div>
 </section>
 
+<section class="alt">
+  <div class="container">
+    <h2>Knoxville Service Areas</h2>
+    <p>Available across the Knoxville metro and surrounding East Tennessee: <a href="/service-areas/">Knoxville</a>, <a href="/service-areas/farragut.html">Farragut</a>, <a href="/service-areas/powell.html">Powell</a>, <a href="/service-areas/maryville.html">Maryville</a>, <a href="/service-areas/oak-ridge.html">Oak Ridge</a>, <a href="/service-areas/bearden.html">Bearden</a>, <a href="/service-areas/west-knoxville.html">West Knoxville</a>, <a href="/service-areas/alcoa.html">Alcoa</a>, and <a href="/service-areas/karns.html">Karns</a>.</p>
+  </div>
+</section>
+
 <section class="final-cta">
   <div class="container">
     <h2>Get a Free Pole Barn Quote in Knoxville</h2>
@@ -184,12 +233,6 @@
     <p><a class="cta-button" href="tel:+18655647823">📞 Call Now</a></p>
   </div>
 </section>
-
-<div class="disclosure">
-  <div class="container">
-    <p>This website provides information for Knoxville TN spray foam insulation services. Inquiries are routed to licensed local spray foam installers in the Knoxville area. We are an advertising service and connect homeowners with vetted contractors.</p>
-  </div>
-</div>
 
 <footer>
 <!-- CREDENTIALS MODULE
@@ -202,11 +245,11 @@
     <div class="footer-grid">
       <div><h4>Knoxville Spray Foam Pros</h4><p><a href="tel:+18655647823">(865) 564-7823</a></p><p>Mon-Sat 7AM-7PM</p></div>
       <div><h4>Serving</h4><p>Knoxville, TN<br>Farragut, TN<br>Powell, TN<br>Maryville, TN<br>Oak Ridge, TN<br>West Knoxville, TN<br>Bearden, TN<br>Alcoa, TN<br>Karns, TN</p></div>
-      <div><h4>Quick Links</h4><p><a href="/">Home</a><br><a href="/services/">Services</a><br><a href="/service-areas/">Service Areas</a><br><a href="/about.html">About</a><br><a href="/contact.html">Contact</a><br><a href="/faq.html">FAQ</a><br><a href="/blog/">Blog</a></p></div>
+      <div><h4>Quick Links</h4><p><a href="/">Home</a><br><a href="/services/">Services</a><br><a href="/service-areas/">Service Areas</a><br><a href="/pricing.html">Pricing</a><br><a href="/about.html">About</a><br><a href="/contact.html">Contact</a><br><a href="/faq.html">FAQ</a><br><a href="/blog/">Blog</a></p></div>
     </div>
-    <div class="footer-bottom-links"><a href="/">Home</a> | <a href="/services/">Services</a> | <a href="/service-areas/">Service Areas</a> | <a href="/about.html">About</a> | <a href="/contact.html">Contact</a> | <a href="/faq.html">FAQ</a> | <a href="/blog/">Blog</a></div>
+    <div class="footer-bottom-links"><a href="/">Home</a> | <a href="/services/">Services</a> | <a href="/service-areas/">Service Areas</a> | <a href="/pricing.html">Pricing</a> | <a href="/about.html">About</a> | <a href="/contact.html">Contact</a> | <a href="/faq.html">FAQ</a> | <a href="/blog/">Blog</a></div>
     <div class="footer-disclosure">
-      <p>The website shares information with local, licensed, and insured vendors who will reach out and contact you the consumer with the information provided here.</p>
+      <p>Knoxville Spray Foam Pros connects Knoxville homeowners with independent local spray foam professionals.</p>
       <p>© 2026 Knoxville Spray Foam Pros. All rights reserved.</p>
     </div>
   </div>

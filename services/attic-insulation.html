@@ -24,7 +24,7 @@
   "@type": "Service",
   "name": "Attic Spray Foam Insulation",
   "serviceType": "Attic Spray Polyurethane Foam Installation",
-  "areaServed": {"@type": "City", "name": "Knoxville", "containedInPlace": {"@type": "State", "name": "Tennessee"}},
+  "areaServed": [{"@type": "City", "name": "Knoxville", "containedInPlace": {"@type": "State", "name": "Tennessee"}}, {"@type": "AdministrativeArea", "name": "East Tennessee"}],
   "provider": {"@id": "https://knoxvillesprayfoampros.com/#business"},
   "offers": {"@type": "Offer", "priceCurrency": "USD", "price": "3000.00-7500.00", "priceSpecification": {"@type": "UnitPriceSpecification", "priceCurrency": "USD", "price": "3000.00-7500.00", "unitText": "project"}}
 }
@@ -40,6 +40,46 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Will sealing my Knoxville attic cause moisture problems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. A properly converted unvented attic in Knoxville stays drier than a vented one. Vented attics pull humid 90°F summer air through the soffits, which condenses on cool surfaces. Sealed attics stay at indoor conditions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to remove old fiberglass before spray foam goes in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes if we are spraying the roof deck and the old insulation is on the attic floor - keeping both is redundant and can trap moisture. We vacuum it out before the spray foam goes up."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does an attic spray foam job take in Knoxville?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most Knoxville attic jobs are completed in one day. Larger or multi-story homes may take two. Homeowners stay out 24 hours after spraying."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does attic spray foam qualify for TVA rebates?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. TVA EnergyRight has multiple programs covering attic insulation in Knoxville - including Home Uplift (income-qualified) and Home Energy Score upgrade rebates. We help with the paperwork."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -51,6 +91,7 @@
       <a href="/">Home</a>
       <a href="/services/">Services</a>
       <a href="/service-areas/">Service Areas</a>
+      <a href="/pricing.html">Pricing</a>
       <a href="/blog/">Blog</a>
       <a href="/about.html">About</a>
       <a href="/contact.html">Contact</a>
@@ -65,6 +106,7 @@
   <div class="container hero-grid">
     <div>
       <h1>Attic Spray Foam Insulation in Knoxville, Tennessee</h1>
+      <p class="hero-answer">Attic spray foam insulation seals and insulates the attic plane with open or closed cell polyurethane foam, cutting attic temperatures and HVAC load in Knoxville homes. Typical installed cost in Knoxville runs $1.50 to $5.00 per square foot. The process is a free in-home assessment, a written quote, a 4-6 hour spray, and a 24-hour cure before you re-enter the space. See the <a href="/pricing.html">Knoxville pricing guide</a> for a full breakdown.</p>
       <p>If your upstairs bedroom in Knoxville hits 85°F when the thermostat is set to 72°F, the attic is the problem. We handle polyurethane foam on the underside of the roof deck to turn your vented Knoxville attic into a conditioned, sealed space. Attic temperatures drop from 140°F to roughly 95°F by mid-July, the HVAC stops short-cycling, and the upstairs finally cools. We service attics across Knox, Blount, Anderson, and Sevier County.</p>
       <img src="../images/attic-insulation.jpg" alt="Open cell spray foam applied to the underside of the roof deck in a Knoxville attic" width="1200" height="800" loading="eager" fetchpriority="high">
       <p><a class="cta-button" href="tel:+18655647823">📞 Call (865) 564-7823</a> <a class="cta-button" href="#quote">Get Free Quote</a></p>
@@ -177,6 +219,13 @@
   </div>
 </section>
 
+<section class="alt">
+  <div class="container">
+    <h2>Knoxville Service Areas</h2>
+    <p>Available across the Knoxville metro and surrounding East Tennessee: <a href="/service-areas/">Knoxville</a>, <a href="/service-areas/farragut.html">Farragut</a>, <a href="/service-areas/powell.html">Powell</a>, <a href="/service-areas/maryville.html">Maryville</a>, <a href="/service-areas/oak-ridge.html">Oak Ridge</a>, <a href="/service-areas/bearden.html">Bearden</a>, <a href="/service-areas/west-knoxville.html">West Knoxville</a>, <a href="/service-areas/alcoa.html">Alcoa</a>, and <a href="/service-areas/karns.html">Karns</a>.</p>
+  </div>
+</section>
+
 <section class="final-cta">
   <div class="container">
     <h2>Get a Free Attic Spray Foam Quote in Knoxville</h2>
@@ -184,12 +233,6 @@
     <p><a class="cta-button" href="tel:+18655647823">📞 Call Now</a></p>
   </div>
 </section>
-
-<div class="disclosure">
-  <div class="container">
-    <p>This website provides information for Knoxville TN spray foam insulation services. Inquiries are routed to licensed local spray foam installers in the Knoxville area. We are an advertising service and connect homeowners with vetted contractors.</p>
-  </div>
-</div>
 
 <footer>
 <!-- CREDENTIALS MODULE
@@ -202,11 +245,11 @@
     <div class="footer-grid">
       <div><h4>Knoxville Spray Foam Pros</h4><p><a href="tel:+18655647823">(865) 564-7823</a></p><p>Mon-Sat 7AM-7PM</p></div>
       <div><h4>Serving</h4><p>Knoxville, TN<br>Farragut, TN<br>Powell, TN<br>Maryville, TN<br>Oak Ridge, TN<br>West Knoxville, TN<br>Bearden, TN<br>Alcoa, TN<br>Karns, TN</p></div>
-      <div><h4>Quick Links</h4><p><a href="/">Home</a><br><a href="/services/">Services</a><br><a href="/service-areas/">Service Areas</a><br><a href="/about.html">About</a><br><a href="/contact.html">Contact</a><br><a href="/faq.html">FAQ</a><br><a href="/blog/">Blog</a></p></div>
+      <div><h4>Quick Links</h4><p><a href="/">Home</a><br><a href="/services/">Services</a><br><a href="/service-areas/">Service Areas</a><br><a href="/pricing.html">Pricing</a><br><a href="/about.html">About</a><br><a href="/contact.html">Contact</a><br><a href="/faq.html">FAQ</a><br><a href="/blog/">Blog</a></p></div>
     </div>
-    <div class="footer-bottom-links"><a href="/">Home</a> | <a href="/services/">Services</a> | <a href="/service-areas/">Service Areas</a> | <a href="/about.html">About</a> | <a href="/contact.html">Contact</a> | <a href="/faq.html">FAQ</a> | <a href="/blog/">Blog</a></div>
+    <div class="footer-bottom-links"><a href="/">Home</a> | <a href="/services/">Services</a> | <a href="/service-areas/">Service Areas</a> | <a href="/pricing.html">Pricing</a> | <a href="/about.html">About</a> | <a href="/contact.html">Contact</a> | <a href="/faq.html">FAQ</a> | <a href="/blog/">Blog</a></div>
     <div class="footer-disclosure">
-      <p>The website shares information with local, licensed, and insured vendors who will reach out and contact you the consumer with the information provided here.</p>
+      <p>Knoxville Spray Foam Pros connects Knoxville homeowners with independent local spray foam professionals.</p>
       <p>© 2026 Knoxville Spray Foam Pros. All rights reserved.</p>
     </div>
   </div>
