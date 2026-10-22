@@ -1,0 +1,5 @@
+.claude/
+.env
+logo-source.png
+node_modules/
+.DS_Store
