@@ -619,3 +619,20 @@ footer p { overflow-wrap: anywhere; }
 
 /* Long words and URLs never overflow */
 main { overflow-wrap: break-word; }
+
+/* Mobile hero: keep the whole 3-field form above the fold */
+@media (max-width: 599px) {
+  .hero { padding: 16px 0 24px; }
+  .hero h1 { font-size: 1.6rem; }
+  .hero-copy > p { font-size: 0.98rem; margin-bottom: 10px; }
+  .hero-ctas { display: none; }
+  .hero-grid { gap: 16px; }
+  .form-card { padding: 14px 16px; }
+  .form-card h2 { font-size: 1.15rem; margin-bottom: 8px; }
+  .form-card label { margin-bottom: 3px; font-size: 0.85rem; }
+  .form-card input, .form-card textarea { padding: 10px; margin-bottom: 8px; }
+  .form-card textarea { min-height: 46px; height: 46px; }
+  .form-card button { padding: 12px; }
+  .form-card .consent { margin-top: 6px; font-size: 0.72rem; }
+  .form-card .or-call { display: none; }
+}
