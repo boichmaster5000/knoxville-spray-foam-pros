@@ -636,3 +636,45 @@ main { overflow-wrap: break-word; }
   .form-card .consent { margin-top: 6px; font-size: 0.72rem; }
   .form-card .or-call { display: none; }
 }
+
+/* Pass 2: homepage service entries (H3, photo, summary, link) */
+.svc-list { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 8px; }
+.svc-item { display: grid; grid-template-columns: 112px 1fr; gap: 12px; align-items: start; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 6px; padding: 12px; }
+.svc-item img { width: 112px; height: 84px; object-fit: cover; border-radius: 4px; }
+.svc-item h3 { font-size: 1.05rem; margin: 0 0 4px; }
+.svc-item h3 a { text-decoration: none; color: #1a365d; }
+.svc-item p { margin: 0 0 6px; font-size: 0.95rem; color: #2d3748; }
+.svc-item .learn-more { font-weight: 700; font-size: 0.9rem; color: #1a365d; }
+@media (min-width: 768px) {
+  .svc-list { grid-template-columns: 1fr 1fr; gap: 20px; }
+  .svc-item { grid-template-columns: 1fr; padding: 16px; }
+  .svc-item img { width: 100%; height: auto; aspect-ratio: 3 / 2; }
+  .svc-item h3 { font-size: 1.2rem; margin-top: 4px; }
+}
+@media (min-width: 1100px) { .svc-list { grid-template-columns: 1fr 1fr 1fr; } }
+
+/* Pass 2: homepage quick answers swipe on phones so services start sooner */
+@media (max-width: 599px) {
+  .qa-scroll { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 12px; padding-bottom: 8px; -webkit-overflow-scrolling: touch; }
+  .qa-scroll .qa { flex: 0 0 86%; scroll-snap-align: start; }
+  .quick-answers.compact { padding: 24px 0; }
+  .quick-answers.compact h2 { margin-bottom: 10px; }
+  .swipe-hint { font-size: 0.85rem; color: #4a5568; margin: 0 0 8px; }
+}
+@media (min-width: 600px) { .swipe-hint { display: none; } }
+.calc-teaser { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
+.calc-teaser p { margin: 0; flex: 1 1 320px; }
+/* Pass 2: show the homepage hero photo on phones, below the form */
+@media (max-width: 599px) {
+  .hero-home .hero-media { display: block; }
+  .hero-home .hero-media img { aspect-ratio: 3 / 2; object-fit: cover; width: 100%; }
+}
+@media (max-width: 599px) {
+  .qa-scroll .qa { flex: 0 0 92%; padding: 12px 14px; }
+  .qa-scroll .qa h3 { font-size: 0.98rem; margin-bottom: 4px; }
+  .qa-scroll .qa p { font-size: 0.9rem; line-height: 1.5; }
+  .quick-answers.compact { padding: 18px 0 14px; }
+  .svc-section { padding: 24px 0; }
+  .svc-section > .container > p { font-size: 0.92rem; margin-bottom: 10px; }
+  .hero-home { padding-bottom: 16px; }
+}
