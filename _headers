@@ -1,3 +1,10 @@
+# The pages.dev copies of the site must not be indexed; only knoxvillesprayfoampros.com should rank.
+https://knoxville-spray-foam-pros.pages.dev/*
+  X-Robots-Tag: noindex
+
+https://:version.knoxville-spray-foam-pros.pages.dev/*
+  X-Robots-Tag: noindex
+
 /*
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-Content-Type-Options: nosniff

@@ -1,5 +1,5 @@
-# Force non-www (apex)
-https://www.knoxvillesprayfoampros.com/* https://knoxvillesprayfoampros.com/:splat 301!
+# www -> apex is NOT handled here: Cloudflare Pages ignores domain-level rules in _redirects.
+# It needs a Redirect Rule on the knoxvillesprayfoampros.com zone in the Cloudflare dashboard.
 
 # Explicit /index.html -> / so the home has one canonical URL
 /index.html / 301!
